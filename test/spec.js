@@ -3,12 +3,12 @@ const {convertToC, convertToF} = require('../tempConverter');
 
 describe('convert to Celsius from Fehranheit', ()=>{
     it('converts', ()=> {
-        expect(convertToC(100)).to.eql(37.7778)
+        expect(convertToC(100)).to.eql(37.78)
     })
 })
 
-describe('convert to Celsius from Fehranheit', ()=>{
+describe('convert to Feh from C', ()=>{
     it('converts', ()=> {
-        expect(convertToF).to.be.ok
+        expect(convertToF(36)).to.eql(96.8)
     })
 })
